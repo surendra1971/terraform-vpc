@@ -24,6 +24,7 @@ Ref : https://github.com/coretech/terrafile
 ### terraform commands with backend config in a environment specific file 
 
 ```
+   terrafile -f env-dev/Terrafile
  $ terraform init -backend-config=env-dev/dev-backend.tfvars
  $ terraform plan -var-file=env-dev/dev.tfvars
  $ terraform apply -auto-approve -var-file=env-dev/dev.tfvars
